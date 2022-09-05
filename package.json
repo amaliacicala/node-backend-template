@@ -1,0 +1,17 @@
+{
+	"name": "backend-template",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/amaliacicala/node-backend-template.git"
+	},
+	"engines": {
+		"node": ">=16"
+	},
+	"bugs": {
+		"url": "https://github.com/amaliacicala/node-backend-template/issues"
+	},
+	"homepage": "https://github.com/amaliacicala/node-backend-template#readme"
+}

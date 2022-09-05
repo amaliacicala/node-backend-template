@@ -1,0 +1,37 @@
+API HTTP REQUESTS
+
+POST /api/auth/signup       create my user
+POST /api/auth/signin       log-in my user
+GET  /api/test/all           get all public data
+GET  /api/test/user          get my selected user
+GET  /api/test/admin         get admin user
+GET  /api/test/moderator     get mod user
+
+-----------------------------------------------------------
+
+MY APP CONFIGURATION TREE
+
+// app
+
+    // routes
+        auth.routes.js:         POST to register & login
+        user.routes.js:         GET public || protected
+
+    // middleware
+        verifySignup.js:        check username & password
+        authJwt.js:             check token, check user-db-roles
+
+    // controllers
+        auth.controller.js:     handle register & login
+        user.controller.js:     return public || protected data
+
+    // models
+        user.model.js:          my user model
+        role.model.js:          my user's roles
+
+    // config
+        db.config.js:           DB config
+        seq.config.js:          Sequelize config
+        auth.config.js:         key
+
+    //server.js to run
