@@ -17,7 +17,7 @@ Handles user authentication (sign up, sign in, and user roles) and records all d
 npm install
 ```
 
-## Configure
+## Configure
 
 Create a `.env` file to state your MySQL password:
 
