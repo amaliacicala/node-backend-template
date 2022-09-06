@@ -1,4 +1,4 @@
-const db = require('../models');
+const db = require('../config/seq.config.js');
 
 const ROLES = db.ROLES;
 const User = db.user;
